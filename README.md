@@ -47,8 +47,14 @@ for easy formatting of the data.
       * Stake Metadata - [/unit/current-user-units/](https://www.lds.org/directory/services/ludrs/unit/current-user-units/)
       * User Id - [/mem/current-user-id/](https://www.lds.org/directory/services/ludrs/mem/current-user-id/)
       * Ward Member List - [/mem/member-list/:unit_number](https://www.lds.org/directory/services/ludrs/mem/member-list/:unit_number)
+        * `unit_number` is found in [`/unit/current-user-ward-stake/`](https://www.lds.org/directory/services/ludrs/unit/current-user-ward-stake/) and [`/unit/current-user-units/`](https://www.lds.org/directory/services/ludrs/unit/current-user-units/)
       * Ward Photo List - [/mem/householdProfile/:head_of_house_individual_id](https://www.lds.org/directory/services/ludrs/mem/householdProfile/:head_of_house_individual_id)
+        * `:head_of_house_individual_id` is found in `/mem/member-list/:ward_unit_no`
       * Household - [/directory/services/ludrs/mem/householdProfile/:head_of_house_individual_id](https://www.lds.org/directory/services/ludrs/mem/householdProfile/:head_of_house_individual_id)
+        * `:head_of_house_individual_id` is found in `/mem/member-list/:ward_unit_no`
+
+Note that fields preceded by colons, such as `:unit_number`
+require an id that you'd get from another resource.
 
 LDS.org Directory
 ===
@@ -295,7 +301,7 @@ and then (intelligently?) cropped to 40x40
 
     name="file0"; filename="original_:picname.jpg"
     name="file1"; filename="medium_:picname.jpg" 200x150 (height is exactly 150, width may be up to 150 or 200)
-    name="file1"; filename="thumbnail_:picname.jpg" 40x40 ()
+    name="file2"; filename="thumbnail_:picname.jpg" 40x40 ()
 
     {"good":true,"message":""}
 
