@@ -69,8 +69,35 @@ Version
 
     GET /directory/services/ludrs/util/ver/
 
-Stake
+Current Area, Stake, & Ward MetaData
 ---
+
+All wards are listed as the stake
+
+    GET /directory/services/ludrs/unit/current-user-ward-stake/
+
+    {
+        "areaUnitNo": 777777,
+        "branch": false,
+        "district": false,
+        "mission": false,
+        "newPhotoCount": -1,
+        "stake": true,
+        "stakeName": "Provo Utah YSA 0th Stake",
+        "stakeUnitNo": 555555,
+        "userHasStakeAdminRights": false,
+        "userHasWardAdminRights": false,
+        "userHasWardCalling": false,
+        "usersHomeWard": true,
+        "ward": true,
+        "wardName": "Provo YSA 300th Ward",
+        "wardUnitNo": 444444
+    }
+
+Area & Stakes
+---
+
+Contais an array of stakes, but lacks the area meta data.
 
     GET /directory/services/ludrs/unit/current-user-units/
 
@@ -98,7 +125,7 @@ Stake
               "usersHomeWard": true,
               "ward": true,
               "wardName": "Provo YSA 300th Ward",
-              "wardUnitNo": 222222
+              "wardUnitNo": 444444
             }
         ]
       }
@@ -108,28 +135,6 @@ The `current-user-units` will be a collection of wards and / or branches of the 
 
 Ward
 ---
-
-All wards are listed as the stake
-
-    GET /directory/services/ludrs/unit/current-user-ward-stake/
-
-    {
-        "areaUnitNo": 777777,
-        "branch": false,
-        "district": false,
-        "mission": false,
-        "newPhotoCount": -1,
-        "stake": true,
-        "stakeName": "Provo Utah YSA 0th Stake",
-        "stakeUnitNo": 555555,
-        "userHasStakeAdminRights": false,
-        "userHasWardAdminRights": false,
-        "userHasWardCalling": false,
-        "usersHomeWard": true,
-        "ward": true,
-        "wardName": "Provo YSA 300th Ward",
-        "wardUnitNo": 222222
-    }
 
 Individual wards contain the list of members
 
@@ -286,7 +291,7 @@ The **family phone number** is `householdInfo.phone` (but I'm not sure if it's d
         "stakeUnitNo": 555555,
         "ward": true,
         "wardName": "Provo YSA 300th Ward",
-        "wardUnitNo": 222222
+        "wardUnitNo": 444444
       }
     }
 
