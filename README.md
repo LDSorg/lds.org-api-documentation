@@ -171,10 +171,10 @@ The photos and phone numbers are already available in the household resource.
 I'm not sure if any of the phone number, photo, or household name are actually different,
 so this resource may be entirely unnecessary.
 
-  * headOfHousehold.photoUrl
-  * householdInfo.photoUrl
+  * headOfHousehold.photoUrl (individual photo)
+  * householdInfo.photoUrl (entire family photo)
 
-The phone number can be accessed like so
+The family phone number and family photo can be accessed like so
 
     GET /directory/services/ludrs/mem/wardDirectory/photos/:ward_unit_no
 
@@ -186,6 +186,9 @@ The phone number can be accessed like so
           "photoUrl": "/bcs/content?token=6zr5CJL5hQ7QdxHZZp8LG_aKQWafJ8x0V8gyTExIvoEZcCmlBICSabVO7rF7JIOR6y94HWsYKNCtilHK6fJTfwTT-mR0SV8_jKm7lRcobsfgpDnVHl3_EV1z3Ysnj30EZIHQ7EbIxXE6zzY-d_9x5W43mrnJJI-N%3dt_U1ZvJ4jZiRhx7S8KlE%3dXWMv0Vbv6i1ySrWhMTlqK6EQbhhqG0MsWNUtM4PsG%3d%3dvIlgKoLQFWgCHX5A9k_nix9iPPZezcE8BoobjcsJ2WTXlKF7WnC7hsu"
         }
     ]
+    
+Note that in YSA wards the family phone number and family photo are often the individuals photo,
+but since there's de facto convention and either could be out of sync, try both.
 
 Map
 ---
@@ -201,6 +204,14 @@ so this resource may be entirely unnecessary.
 
 Household
 ---
+
+The **individual photo** is `headOfHousehold.photoUrl`.
+
+The **family photo** is `householdInfo.photoUrl` (and I can confirm it's different from the above).
+
+The **individual phone number** is `headOfHousehold.phone`.
+
+The **family phone number** is `householdInfo.phone` (but I'm not sure if it's different).
 
     GET /directory/services/ludrs/mem/householdProfile/:head_of_house_individual_id
 
