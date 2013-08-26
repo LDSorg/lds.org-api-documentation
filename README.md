@@ -50,6 +50,7 @@ for easy formatting of the data.
         * `unit_number` is found in [`/unit/current-user-ward-stake/`](https://www.lds.org/directory/services/ludrs/unit/current-user-ward-stake/) and [`/unit/current-user-units/`](https://www.lds.org/directory/services/ludrs/unit/current-user-units/)
       * Ward Photo List - [/mem/householdProfile/:head_of_house_individual_id](https://www.lds.org/directory/services/ludrs/mem/householdProfile/:head_of_house_individual_id)
         * `:head_of_house_individual_id` is found in `/mem/member-list/:ward_unit_no`
+      * Map - [/mem/map/:head_of_house_individual_id](https://www.lds.org/directory/services/ludrs/mem/map/:head_of_house_individual_id)
       * Household - [/directory/services/ludrs/mem/householdProfile/:head_of_house_individual_id](https://www.lds.org/directory/services/ludrs/mem/householdProfile/:head_of_house_individual_id)
         * `:head_of_house_individual_id` is found in `/mem/member-list/:ward_unit_no`
 
@@ -165,9 +166,10 @@ Individual wards contain the list of members
 Photos
 ---
 
-Phone Numbers are only visible via the photos resource.
+The photos and phone numbers are already available in the household resource.
 
-The photos are already available in the household resource.
+I'm not sure if any of the phone number, photo, or household name are actually different,
+so this resource may be entirely unnecessary.
 
   * headOfHousehold.photoUrl
   * householdInfo.photoUrl
@@ -184,6 +186,18 @@ The phone number can be accessed like so
           "photoUrl": "/bcs/content?token=6zr5CJL5hQ7QdxHZZp8LG_aKQWafJ8x0V8gyTExIvoEZcCmlBICSabVO7rF7JIOR6y94HWsYKNCtilHK6fJTfwTT-mR0SV8_jKm7lRcobsfgpDnVHl3_EV1z3Ysnj30EZIHQ7EbIxXE6zzY-d_9x5W43mrnJJI-N%3dt_U1ZvJ4jZiRhx7S8KlE%3dXWMv0Vbv6i1ySrWhMTlqK6EQbhhqG0MsWNUtM4PsG%3d%3dvIlgKoLQFWgCHX5A9k_nix9iPPZezcE8BoobjcsJ2WTXlKF7WnC7hsu"
         }
     ]
+
+Map
+---
+
+You can build the urlLink yourself,
+so this resource may be entirely unnecessary.
+
+    GET /directory/services/ludrs/mem/map/:head_of_house_individual_id
+
+    {
+      "urlLink": "https://lds.org/rcmaps/#x=ward&ward=12345&id=household:1234567890"
+    }
 
 Household
 ---
