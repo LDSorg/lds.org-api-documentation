@@ -48,12 +48,11 @@ for easy formatting of the data.
       * User Id - [/mem/current-user-id/](https://www.lds.org/directory/services/ludrs/mem/current-user-id/)
       * Approved Photo - [/mem/currentUserHasApprovedPhoto/](https://www.lds.org/directory/services/ludrs/mem/currentUserHasApprovedPhoto/)
       * Ward Member List - [/mem/member-list/:unit_number](https://www.lds.org/directory/services/ludrs/mem/member-list/:unit_number)
-        * `unit_number` is found in [`/unit/current-user-ward-stake/`](https://www.lds.org/directory/services/ludrs/unit/current-user-ward-stake/) and [`/unit/current-user-units/`](https://www.lds.org/directory/services/ludrs/unit/current-user-units/)
-      * Ward Photo List - [/mem/householdProfile/:head_of_house_individual_id](https://www.lds.org/directory/services/ludrs/mem/householdProfile/:head_of_house_individual_id)
-        * `:head_of_house_individual_id` is found in `/mem/member-list/:ward_unit_no`
+      * Ward Photo List - [/mem/wardDirectory/photos/:unit_number](https://www.lds.org/directory/services/ludrs/mem/wardDirectory/photos/:unit_number)
+          * `unit_number` is found in [`/unit/current-user-ward-stake/`](https://www.lds.org/directory/services/ludrs/unit/current-user-ward-stake/) and [`/unit/current-user-units/`](https://www.lds.org/directory/services/ludrs/unit/current-user-units/)
       * Map - [/mem/map/:head_of_house_individual_id](https://www.lds.org/directory/services/ludrs/mem/map/:head_of_house_individual_id)
       * Household - [/mem/householdProfile/:head_of_house_individual_id](https://www.lds.org/directory/services/ludrs/mem/householdProfile/:head_of_house_individual_id)
-        * `:head_of_house_individual_id` is found in `/mem/member-list/:ward_unit_no`
+          * `:head_of_house_individual_id` is found in `/mem/member-list/:ward_unit_no`
 
 Note that fields preceded by colons, such as `:unit_number`
 require an id that you'd get from another resource.
