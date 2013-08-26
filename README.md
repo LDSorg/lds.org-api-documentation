@@ -97,7 +97,7 @@ All wards are listed as the stake
 Area & Stakes
 ---
 
-Contais an array of stakes, but lacks the area meta data.
+Contains an array of stakes, but lacks the area meta data.
 
     GET /directory/services/ludrs/unit/current-user-units/
 
