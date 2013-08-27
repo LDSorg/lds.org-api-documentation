@@ -62,6 +62,9 @@ for easy formatting of the data.
       * Ward Organizations
           * Categories: HIGH_PRIEST, ELDER, RELIEF_SOCIETY, PRIEST, TEACHER, DEACON, LAUREL, MIA_MAID, BEEHIVE, ADULT
           * High Priests https://www.lds.org/directory/services/ludrs/1.1/unit/roster/:ward_unit_no/HIGH_PRIEST
+      * Stake Stuff
+          * https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-positions/517216
+          * https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/517216/1186/1
 
 Note that fields preceded by colons, such as `:unit_number`
 require an id that you'd get from another resource.
@@ -1824,5 +1827,721 @@ Leadership Groups (false)
             ]
         }
     ]
+}
+```
+
+Stake Leadership
+---
+
+    GET https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-positions/:stake_unit_no
+
+```javascript
+{
+    "stakeLeadership": [
+        {
+            "groupKey": 1186,
+            "groupName": "Stake Presidency",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 1,
+                    "positionName": "Stake President"
+                },
+                {
+                    "positionId": 2,
+                    "positionName": "Stake Presidency First Counselor"
+                },
+                {
+                    "positionId": 3,
+                    "positionName": "Stake Presidency Second Counselor"
+                },
+                {
+                    "positionId": 52,
+                    "positionName": "Stake Clerk"
+                },
+                {
+                    "positionId": 53,
+                    "positionName": "Stake Assistant Clerk"
+                },
+                {
+                    "positionId": 782,
+                    "positionName": "Stake Assistant Clerk--Finance"
+                },
+                {
+                    "positionId": 803,
+                    "positionName": "Stake Assistant Clerk--Technology Specialist"
+                },
+                {
+                    "positionId": 51,
+                    "positionName": "Stake Executive Secretary"
+                }
+            ]
+        },
+        {
+            "groupKey": 1189,
+            "groupName": "High Council",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 94,
+                    "positionName": "Stake High Councilor"
+                }
+            ]
+        },
+        {
+            "groupKey": 1190,
+            "groupName": "Patriarch",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 13,
+                    "positionName": "Patriarch"
+                }
+            ]
+        },
+        {
+            "groupKey": 717,
+            "groupName": "Stake Relief Society Presidency",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 741,
+                    "positionName": "Stake Relief Society President"
+                },
+                {
+                    "positionId": 742,
+                    "positionName": "Stake Relief Society First Counselor"
+                },
+                {
+                    "positionId": 743,
+                    "positionName": "Stake Relief Society Second Counselor"
+                },
+                {
+                    "positionId": 744,
+                    "positionName": "Stake Relief Society Secretary"
+                }
+            ]
+        },
+        {
+            "groupKey": 723,
+            "groupName": "Stake Sunday School Presidency",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 756,
+                    "positionName": "Stake Sunday School President"
+                },
+                {
+                    "positionId": 758,
+                    "positionName": "Stake Sunday School Second Counselor"
+                }
+            ]
+        },
+        {
+            "groupKey": 719,
+            "groupName": "Stake Young Men Presidency",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 746,
+                    "positionName": "Stake Young Men President"
+                },
+                {
+                    "positionId": 747,
+                    "positionName": "Stake Young Men First Counselor"
+                },
+                {
+                    "positionId": 748,
+                    "positionName": "Stake Young Men Second Counselor"
+                },
+                {
+                    "positionId": 749,
+                    "positionName": "Stake Young Men Secretary"
+                }
+            ]
+        },
+        {
+            "groupKey": 721,
+            "groupName": "Stake Young Women Presidency",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 751,
+                    "positionName": "Stake Young Women President"
+                },
+                {
+                    "positionId": 752,
+                    "positionName": "Stake Young Women First Counselor"
+                },
+                {
+                    "positionId": 753,
+                    "positionName": "Stake Young Women Second Counselor"
+                },
+                {
+                    "positionId": 755,
+                    "positionName": "Stake Young Women Secretary"
+                }
+            ]
+        },
+        {
+            "groupKey": 725,
+            "groupName": "Stake Primary",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 1380,
+                    "positionName": "Stake Primary President"
+                },
+                {
+                    "positionId": 1383,
+                    "positionName": "Stake Primary First Counselor"
+                },
+                {
+                    "positionId": 1384,
+                    "positionName": "Stake Primary Second Counselor"
+                },
+                {
+                    "positionId": 1385,
+                    "positionName": "Stake Primary Secretary"
+                }
+            ]
+        },
+        {
+            "groupKey": 1182,
+            "groupName": "Single Adult",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 1568,
+                    "positionName": "Stake Single Adult Adviser"
+                },
+                {
+                    "positionId": 224,
+                    "positionName": "Stake Single Adult Representative"
+                }
+            ]
+        },
+        {
+            "groupKey": 1183,
+            "groupName": "Young Single Adult",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 972,
+                    "positionName": "Stake Young Single Adult Adviser"
+                }
+            ]
+        },
+        {
+            "groupKey": 1194,
+            "groupName": "Stake Family History",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 778,
+                    "positionName": "Stake Family History Center Director"
+                },
+                {
+                    "positionId": 1375,
+                    "positionName": "Stake Family History Consultant"
+                }
+            ]
+        },
+        {
+            "groupKey": 1306,
+            "groupName": "Seminary and Institute",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 1685,
+                    "positionName": "Stake Institute Supervisor"
+                },
+                {
+                    "positionId": 1684,
+                    "positionName": "Stake Seminary Supervisor"
+                },
+                {
+                    "positionId": 1269,
+                    "positionName": "Stake Seminary Teacher"
+                }
+            ]
+        },
+        {
+            "groupKey": 1185,
+            "groupName": "Other Callings",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 690,
+                    "positionName": "Stake History Specialist"
+                },
+                {
+                    "positionId": 1858,
+                    "positionName": "Addiction Recovery Worker"
+                },
+                {
+                    "positionId": 0,
+                    "positionName": "Stake YSA mentor"
+                },
+                {
+                    "positionId": 0,
+                    "positionName": "Stake Service Activities Director"
+                },
+                {
+                    "positionId": 0,
+                    "positionName": "Communications Specialist"
+                },
+                {
+                    "positionId": 0,
+                    "positionName": "Emergency Preparedness Specialist"
+                }
+            ]
+        },
+        {
+            "groupKey": 1281,
+            "groupName": "Auditing",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 1276,
+                    "positionName": "Stake Audit Committee Chairman"
+                },
+                {
+                    "positionId": 1836,
+                    "positionName": "Stake Audit Committee Member"
+                },
+                {
+                    "positionId": 691,
+                    "positionName": "Stake Auditor"
+                }
+            ]
+        },
+        {
+            "groupKey": 1280,
+            "groupName": "Activities and Sports",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 720,
+                    "positionName": "Stake Activities Committee Chairman"
+                }
+            ]
+        },
+        {
+            "groupKey": 1297,
+            "groupName": "Facilities",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 1917,
+                    "positionName": "Stake Physical Facilities Representative"
+                },
+                {
+                    "positionId": 1245,
+                    "positionName": "Stake Building Specialist"
+                }
+            ]
+        },
+        {
+            "groupKey": 1304,
+            "groupName": "Public Affairs",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 724,
+                    "positionName": "Stake Director of Public Affairs"
+                },
+                {
+                    "positionId": 1417,
+                    "positionName": "Stake Assistant Director of Public Affairs"
+                }
+            ]
+        },
+        {
+            "groupKey": 1300,
+            "groupName": "Music",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 728,
+                    "positionName": "Stake Music Chairman"
+                }
+            ]
+        },
+        {
+            "groupKey": 1296,
+            "groupName": "Employment and Welfare",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 1457,
+                    "positionName": "Stake Employment Specialist"
+                }
+            ]
+        }
+    ],
+    "unitLeadership": [
+        {
+            "groupKey": 1186,
+            "groupName": "Stake Presidency",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 1,
+                    "positionName": "Stake President"
+                },
+                {
+                    "positionId": 2,
+                    "positionName": "Stake Presidency First Counselor"
+                },
+                {
+                    "positionId": 3,
+                    "positionName": "Stake Presidency Second Counselor"
+                },
+                {
+                    "positionId": 52,
+                    "positionName": "Stake Clerk"
+                },
+                {
+                    "positionId": 53,
+                    "positionName": "Stake Assistant Clerk"
+                },
+                {
+                    "positionId": 782,
+                    "positionName": "Stake Assistant Clerk--Finance"
+                },
+                {
+                    "positionId": 803,
+                    "positionName": "Stake Assistant Clerk--Technology Specialist"
+                },
+                {
+                    "positionId": 51,
+                    "positionName": "Stake Executive Secretary"
+                }
+            ]
+        },
+        {
+            "groupKey": 1189,
+            "groupName": "High Council",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 94,
+                    "positionName": "Stake High Councilor"
+                }
+            ]
+        },
+        {
+            "groupKey": 1190,
+            "groupName": "Patriarch",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 13,
+                    "positionName": "Patriarch"
+                }
+            ]
+        },
+        {
+            "groupKey": 717,
+            "groupName": "Stake Relief Society Presidency",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 741,
+                    "positionName": "Stake Relief Society President"
+                },
+                {
+                    "positionId": 742,
+                    "positionName": "Stake Relief Society First Counselor"
+                },
+                {
+                    "positionId": 743,
+                    "positionName": "Stake Relief Society Second Counselor"
+                },
+                {
+                    "positionId": 744,
+                    "positionName": "Stake Relief Society Secretary"
+                }
+            ]
+        },
+        {
+            "groupKey": 723,
+            "groupName": "Stake Sunday School Presidency",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 756,
+                    "positionName": "Stake Sunday School President"
+                },
+                {
+                    "positionId": 758,
+                    "positionName": "Stake Sunday School Second Counselor"
+                }
+            ]
+        },
+        {
+            "groupKey": 719,
+            "groupName": "Stake Young Men Presidency",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 746,
+                    "positionName": "Stake Young Men President"
+                },
+                {
+                    "positionId": 747,
+                    "positionName": "Stake Young Men First Counselor"
+                },
+                {
+                    "positionId": 748,
+                    "positionName": "Stake Young Men Second Counselor"
+                },
+                {
+                    "positionId": 749,
+                    "positionName": "Stake Young Men Secretary"
+                }
+            ]
+        },
+        {
+            "groupKey": 721,
+            "groupName": "Stake Young Women Presidency",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 751,
+                    "positionName": "Stake Young Women President"
+                },
+                {
+                    "positionId": 752,
+                    "positionName": "Stake Young Women First Counselor"
+                },
+                {
+                    "positionId": 753,
+                    "positionName": "Stake Young Women Second Counselor"
+                },
+                {
+                    "positionId": 755,
+                    "positionName": "Stake Young Women Secretary"
+                }
+            ]
+        },
+        {
+            "groupKey": 725,
+            "groupName": "Stake Primary",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 1380,
+                    "positionName": "Stake Primary President"
+                },
+                {
+                    "positionId": 1383,
+                    "positionName": "Stake Primary First Counselor"
+                },
+                {
+                    "positionId": 1384,
+                    "positionName": "Stake Primary Second Counselor"
+                },
+                {
+                    "positionId": 1385,
+                    "positionName": "Stake Primary Secretary"
+                }
+            ]
+        },
+        {
+            "groupKey": 1182,
+            "groupName": "Single Adult",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 1568,
+                    "positionName": "Stake Single Adult Adviser"
+                },
+                {
+                    "positionId": 224,
+                    "positionName": "Stake Single Adult Representative"
+                }
+            ]
+        },
+        {
+            "groupKey": 1183,
+            "groupName": "Young Single Adult",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 972,
+                    "positionName": "Stake Young Single Adult Adviser"
+                }
+            ]
+        },
+        {
+            "groupKey": 1194,
+            "groupName": "Stake Family History",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 778,
+                    "positionName": "Stake Family History Center Director"
+                },
+                {
+                    "positionId": 1375,
+                    "positionName": "Stake Family History Consultant"
+                }
+            ]
+        },
+        {
+            "groupKey": 1306,
+            "groupName": "Seminary and Institute",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 1685,
+                    "positionName": "Stake Institute Supervisor"
+                },
+                {
+                    "positionId": 1684,
+                    "positionName": "Stake Seminary Supervisor"
+                },
+                {
+                    "positionId": 1269,
+                    "positionName": "Stake Seminary Teacher"
+                }
+            ]
+        },
+        {
+            "groupKey": 1185,
+            "groupName": "Other Callings",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 690,
+                    "positionName": "Stake History Specialist"
+                },
+                {
+                    "positionId": 1858,
+                    "positionName": "Addiction Recovery Worker"
+                },
+                {
+                    "positionId": 0,
+                    "positionName": "Stake YSA mentor"
+                },
+                {
+                    "positionId": 0,
+                    "positionName": "Stake Service Activities Director"
+                },
+                {
+                    "positionId": 0,
+                    "positionName": "Communications Specialist"
+                },
+                {
+                    "positionId": 0,
+                    "positionName": "Emergency Preparedness Specialist"
+                }
+            ]
+        },
+        {
+            "groupKey": 1281,
+            "groupName": "Auditing",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 1276,
+                    "positionName": "Stake Audit Committee Chairman"
+                },
+                {
+                    "positionId": 1836,
+                    "positionName": "Stake Audit Committee Member"
+                },
+                {
+                    "positionId": 691,
+                    "positionName": "Stake Auditor"
+                }
+            ]
+        },
+        {
+            "groupKey": 1280,
+            "groupName": "Activities and Sports",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 720,
+                    "positionName": "Stake Activities Committee Chairman"
+                }
+            ]
+        },
+        {
+            "groupKey": 1297,
+            "groupName": "Facilities",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 1917,
+                    "positionName": "Stake Physical Facilities Representative"
+                },
+                {
+                    "positionId": 1245,
+                    "positionName": "Stake Building Specialist"
+                }
+            ]
+        },
+        {
+            "groupKey": 1304,
+            "groupName": "Public Affairs",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 724,
+                    "positionName": "Stake Director of Public Affairs"
+                },
+                {
+                    "positionId": 1417,
+                    "positionName": "Stake Assistant Director of Public Affairs"
+                }
+            ]
+        },
+        {
+            "groupKey": 1300,
+            "groupName": "Music",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 728,
+                    "positionName": "Stake Music Chairman"
+                }
+            ]
+        },
+        {
+            "groupKey": 1296,
+            "groupName": "Employment and Welfare",
+            "instance": 1,
+            "positions": [
+                {
+                    "positionId": 1457,
+                    "positionName": "Stake Employment Specialist"
+                }
+            ]
+        }
+    ]
+}
+```
+
+    GET https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/:stake_unit_no/:group_key/:instance
+
+```javascript
+{
+    "leaders": [
+        {
+            "callingName": "Stake President",
+            "displayName": "John Doe",
+            "email": "john.doe@ucsf.edu",
+            "householdPhoneNumber": "555-222-7777",
+            "individualId": 19670054124,
+            "phoneNumber": "444-222-7777",
+            "photoUri": "",
+            "positionId": 1
+        },
+    ],
+    "unitName": "San Francisco California West Stake"
 }
 ```
