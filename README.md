@@ -195,18 +195,6 @@ The family phone number and family photo can be accessed like so
 Note that in YSA wards the family phone number and family photo are often the individuals photo,
 but since there's de facto convention and either could be out of sync, try both.
 
-Map of Household
----
-
-You can build the urlLink yourself,
-so this resource may be entirely unnecessary.
-
-    GET /directory/services/ludrs/mem/map/:head_of_house_individual_id
-
-    {
-      "urlLink": "https://lds.org/rcmaps/#x=ward&ward=12345&id=household:1234567890"
-    }
-
 Household & Members / Individuals in Household
 ---
 
@@ -293,6 +281,18 @@ The **family phone number** is `householdInfo.phone` (but I'm not sure if it's d
         "wardName": "Provo YSA 300th Ward",
         "wardUnitNo": 444444
       }
+    }
+
+Map of Household
+---
+
+You can build the urlLink yourself,
+so this resource may be entirely unnecessary.
+
+    GET /directory/services/ludrs/mem/map/:head_of_house_individual_id
+
+    {
+      "urlLink": "https://lds.org/rcmaps/#x=ward&ward=12345&id=household:1234567890"
     }
 
 Member
