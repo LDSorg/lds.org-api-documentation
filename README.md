@@ -53,6 +53,7 @@ for easy formatting of the data.
       * Map - [/mem/map/:head_of_house_individual_id](https://www.lds.org/directory/services/ludrs/mem/map/:head_of_house_individual_id)
       * Household - [/mem/householdProfile/:head_of_house_individual_id](https://www.lds.org/directory/services/ludrs/mem/householdProfile/:head_of_house_individual_id)
           * `:head_of_house_individual_id` is found in `/mem/member-list/:ward_unit_no`
+      * Individual Photos - [/photo/url/:id_1,:id_2,:id_x/individual](https://www.lds.org/directory/services/ludrs/photo/url/:id_1,:id_2,:id_x/individual)
 
 Note that fields preceded by colons, such as `:unit_number`
 require an id that you'd get from another resource.
