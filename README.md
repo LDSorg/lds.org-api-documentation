@@ -57,16 +57,20 @@ for easy formatting of the data.
           * `:head_of_house_individual_id` is found in `/mem/member-list/:ward_unit_no`
       * Individual Photos - [/photo/url/:id_1,:id_2,:id_x/individual](https://www.lds.org/directory/services/ludrs/photo/url/:id_1,:id_2,:id_x/individual)
           * member ids
-      * Callings
-          * Leadership Groups (true): https://www.lds.org/directory/services/ludrs/1.1/unit/ward-leadership-positions/:ward_unit_no/true
-          * Leadership Groups (false): https://www.lds.org/directory/services/ludrs/1.1/unit/ward-leadership-positions/:ward_unit_no/false
-          * Specific Leadership Group: https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/:ward_unit_no/:group_key/:instance
+      * Ward Leadership Positions & Groups (Callings)
+          * List of Position Groups
+              * https://www.lds.org/directory/services/ludrs/1.1/unit/ward-leadership-positions/:ward_unit_no/true
+              * https://www.lds.org/directory/services/ludrs/1.1/unit/ward-leadership-positions/:ward_unit_no/false (deprecated) (false)
+          * List of the Called
+              * https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/:ward_unit_no/:group_key/:instance (not a typo, it says stake, but it's also for wards)
       * Ward Organizations
-          * Categories: HIGH_PRIEST, ELDER, RELIEF_SOCIETY, PRIEST, TEACHER, DEACON, LAUREL, MIA_MAID, BEEHIVE, ADULT
-          * High Priests https://www.lds.org/directory/services/ludrs/1.1/unit/roster/:ward_unit_no/HIGH_PRIEST
-      * Stake Stuff
-          * https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-positions/517216
-          * https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/517216/1186/1
+          * Categories: `["HIGH_PRIEST", "ELDER", "RELIEF_SOCIETY", "PRIEST", "TEACHER", "DEACON", "LAUREL", "MIA_MAID", "BEEHIVE", "ADULTS"]`
+          * https://www.lds.org/directory/services/ludrs/1.1/unit/roster/:ward_unit_no/:organization
+          * **Note on Adults**: This group is all adults. Remember that a newly baptized 50-year-old man may not yet have the priesthood or may be in the office of a priest (typically 16 year-olds).
+      * Stake Leadership Positions & Groups
+            * https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-positions/:stake_unit_no
+            * https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/:stake_unit_no/:group_key/:instance
+
       * Missionaries
           * https://www.lds.org/directory/services/ludrs/missionary/missionaryInfo/:ward_unit_no/
           * https://www.lds.org/directory/services/ludrs/missionary/missionaryDetail/24587980515/21067/
