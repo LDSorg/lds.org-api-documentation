@@ -371,8 +371,10 @@ Let's you know whether or not the ward clerk has approved a photo uploaded by yo
     , "message": "true"
     }
 
-Leadership Groups (true)
+Ward Leadership
 ---
+
+### Positions (to be filled)
 
     GET https://www.lds.org/directory/services/ludrs/1.1/unit/ward-leadership-positions/:ward_unit_no/true
 
@@ -407,8 +409,7 @@ Leadership Groups (true)
 }
 ```
 
-Leadership Groups (false)
----
+### Positions (false) (probably useless)
 
     GET https://www.lds.org/directory/services/ludrs/1.1/unit/ward-leadership-positions/:ward_unit_no/false
 
@@ -446,8 +447,34 @@ probably just a bugfix of a time long gone.
 }
 ```
 
+### Groups (the called and chosen)
+
+    GET https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/:ward_unit_no/:group_key/:instance
+
+**Note**: It's `stake-leadership-group-detail`, but it applies to wards.
+
+```javascript
+{
+    "leaders": [
+        {
+            "callingName": "Stake President",
+            "displayName": "John Doe",
+            "email": "john.doe@ucsf.edu",
+            "householdPhoneNumber": "555-222-7777",
+            "individualId": 19670054124,
+            "phoneNumber": "444-222-7777",
+            "photoUri": "",
+            "positionId": 1
+        },
+    ],
+    "unitName": "San Francisco California West Stake"
+}
+```
+
 Stake Leadership
 ---
+
+### Positions (to be filled)
 
     GET https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-positions/:stake_unit_no
 
@@ -481,6 +508,8 @@ Stake Leadership
     ]
 }
 ```
+
+### Groups (of called individuals)
 
     GET https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/:stake_unit_no/:group_key/:instance
 
