@@ -29,7 +29,7 @@ be keenly aware of privacy and legal concerns.
 Overview & Playground
 ===
 
-  * [LDS Directory](#)
+  * [LDS Directory](#overview--playground)
   * [Church Calendar](https://github.com/LDSorg/lds.org-api-documentation/blob/master/calendar.md)
   * [RC Maps](https://github.com/LDSorg/lds.org-api-documentation/blob/master/maps.md)
 
@@ -101,6 +101,7 @@ All wards are listed as the stake
 
     GET /directory/services/ludrs/unit/current-user-ward-stake/
 
+```javascript
     {
         "areaUnitNo": 777777,
         "branch": false,
@@ -118,6 +119,7 @@ All wards are listed as the stake
         "wardName": "Provo YSA 300th Ward",
         "wardUnitNo": 444444
     }
+```
 
 Stakes in Area & Wards in Stake
 ---
@@ -126,6 +128,7 @@ Contains an array of stakes, but lacks the area meta data.
 
     GET /directory/services/ludrs/unit/current-user-units/
 
+```javascript
     [
       {
         "district": false,
@@ -155,6 +158,7 @@ Contains an array of stakes, but lacks the area meta data.
         ]
       }
     ]
+```
 
 The `current-user-units` will be a collection of wards and / or branches of the currently logged-in user.
 
@@ -165,6 +169,7 @@ Individual wards contain the list of members
 
     GET /directory/services/ludrs/mem/member-list/:ward_unit_no
 
+```javascript
     [
         {
           "children": [],
@@ -192,6 +197,7 @@ Individual wards contain the list of members
           }
         }
     ]
+```
 
 Family Photos in Ward
 ---
@@ -208,6 +214,7 @@ The family phone number and family photo can be accessed like so
 
     GET /directory/services/ludrs/mem/wardDirectory/photos/:ward_unit_no
 
+```javascript
     [
         {
           "householdId": 3333333333,
@@ -216,6 +223,7 @@ The family phone number and family photo can be accessed like so
           "photoUrl": "/bcs/content?token=6zr5CJL5hQ7QdxHZZp8LG_aKQWafJ8x0V8gyTExIvoEZcCmlBICSabVO7rF7JIOR6y94HWsYKNCtilHK6fJTfwTT-mR0SV8_jKm7lRcobsfgpDnVHl3_EV1z3Ysnj30EZIHQ7EbIxXE6zzY-d_9x5W43mrnJJI-N%3dt_U1ZvJ4jZiRhx7S8KlE%3dXWMv0Vbv6i1ySrWhMTlqK6EQbhhqG0MsWNUtM4PsG%3d%3dvIlgKoLQFWgCHX5A9k_nix9iPPZezcE8BoobjcsJ2WTXlKF7WnC7hsu"
         }
     ]
+```
     
 Note that in YSA wards the family phone number and family photo are often the individuals photo,
 but since there's de facto convention and either could be out of sync, try both.
@@ -233,6 +241,7 @@ The **family phone number** is `householdInfo.phone` (but I'm not sure if it's d
 
     GET /directory/services/ludrs/mem/householdProfile/:head_of_house_individual_id
 
+```javascript
     {
       "canViewMapLink": true,
       "hasEditRights": true,
@@ -307,6 +316,7 @@ The **family phone number** is `householdInfo.phone` (but I'm not sure if it's d
         "wardUnitNo": 444444
       }
     }
+```
 
 Map of Household
 ---
@@ -316,9 +326,11 @@ so this resource may be entirely unnecessary.
 
     GET /directory/services/ludrs/mem/map/:head_of_house_individual_id
 
+```javascript
     {
       "urlLink": "https://lds.org/rcmaps/#x=ward&ward=12345&id=household:1234567890"
     }
+```
 
 Member
 ---
@@ -358,7 +370,9 @@ and then (intelligently?) cropped to 40x40
     name="file1"; filename="medium_:picname.jpg" 200x150 (height is exactly 150, width may be up to 150 or 200)
     name="file2"; filename="thumbnail_:picname.jpg" 40x40 ()
 
+```javascript
     {"good":true,"message":""}
+```
 
 Approved Photo
 ---
@@ -366,10 +380,12 @@ Approved Photo
 Let's you know whether or not the ward clerk has approved a photo uploaded by you (the logged in individual).
 
     GET /mem/currentUserHasApprovedPhoto/
-    
+
+```javascript
     { "good": true
     , "message": "true"
     }
+```
 
 Ward Leadership
 ---
