@@ -26,7 +26,7 @@ function done() {
     ;
     
   things.forEach(function (unit) {
-    if ('ward.ysa' === unit.type) {
+    if ('ward.ysa' === unit.type || 'stake.ysa' === unit.type) {
       ysaMap[unit.id] = unit;
     }
   });
