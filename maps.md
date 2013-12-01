@@ -10,7 +10,7 @@ RC Maps
       * http://www.lds.org/maps/services/layers/assigned?lang=eng&id=199141&layer=ward.ysa
               [{"id":"519251","type":"stake.ysa","name":"Provo Utah YSA 13th Stake","address":{"street":"Byu Campus","city":"PROVO","county":"UTAH","state":"UTAH","zip":"84602","country":"UNITED STATES"},"phone":null,"coordinates":[-111.6535435,40.2489353]},{"id":"790818","type":"temple","name":"Provo Utah Temple","address":{"street":"2200 Temple Hill Drive","city":"PROVO","county":"UTAH","state":"UTAH","zip":"84604-1775","country":"UNITED STATES"},"phone":"+1 801-375-5775","coordinates":[-111.639781,40.263675]}]
     * Map Link
-      * http://www.lds.org/maps/#ll=40.247369,-111.65453&z=18&m=google.road&q=provo+192&x=find&find=ward.ysa:268097
+      * http://www.lds.org/maps/#ll=40.247369,-111.65453&z=18&m=google.road&q=provo%20192&x=find&find=ward.ysa:268097
     * Maps 
       * https://www.lds.org/rcmaps/services/user/context.json?lang=eng - some sort of current user context
       * https://www.lds.org/rcmaps/services/layers/bounds?id=2011131&layer=mission&lang=eng - mission boundaries as box
