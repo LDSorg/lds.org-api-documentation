@@ -1,15 +1,16 @@
-var i
-  , terms = ['stake', 'branch']
-  , term
+var ldsOrg = 'http://www.lds.org'
   , things = []
-  , ldsOrg = 'http://www.lds.org'
   , lastWard = 263
+  , lastStudentWard = 5 // married wards
+  , terms = ['ysa%20stake', 'ysa%20branch', 'student%20stake', 'student%20branch']
+  , term
+  , i
   ;
   
 function findYsa(search, cb) {
   $.ajax({
     type: 'GET'
-  , url: ldsOrg + "/maps/services/search?query=YSA%20" + search + "&lang=eng"
+  , url: ldsOrg + "/maps/services/search?query=" + search + "&lang=eng"
   }).success(function (data) {
     things = things.concat(data);
     cb();
@@ -17,7 +18,11 @@ function findYsa(search, cb) {
 }
 
 for (i = 0; i < lastWard; i += 1) {
-  terms.push(i + 1);
+  terms.push("YSA%20" + (i + 1));
+}
+
+for (i = 0; i < lastStudentWard; i += 1) {
+  terms.push("Student%20" + (i + 1));
 }
 
 function done() {
@@ -26,7 +31,7 @@ function done() {
     ;
     
   things.forEach(function (unit) {
-    if ('ward.ysa' === unit.type || 'stake.ysa' === unit.type) {
+    if ('ward.ysa' === unit.type || 'stake.ysa' === unit.type || 'ward.student' === unit.type || 'stake.student' === unit.type) {
       ysaMap[unit.id] = unit;
     }
   });
