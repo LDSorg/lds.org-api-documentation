@@ -5,7 +5,7 @@ lds.org/maps
 * ward details: <http://www.lds.org/maps/services/layers/details?id=199141&layer=ward.ysa&lang=eng>
 * assigned: <http://www.lds.org/maps/services/layers/assigned?lang=eng&id=199141&layer=ward.ysa>
 * nearby: <http://www.lds.org/maps/services/search/nearby?latitude=40.384746&longitude=-111.59452699999997&lang=en>
-* clusters: <http://www.lds.org/maps/services/layers/clusters?lang=eng&ids=meetinghouse&north=41.916298822403355&south=38.84582564124303&east=-111.57737399609374&west=-112.61558200390624&zoom=8&scale=false>
+* clusters: <http://www.lds.org/maps/services/layers/clusters?lang=eng&ids=meetinghouse&north=40.34778698010012&south=40.30689082506321&east=-111.66744248138428&west=-111.69327751861573&zoom=14&scale=false>
 * meetinghouse details: <http://www.lds.org/maps/services/layers/details?id=5185939-01-01&layer=meetinghouse&lang=eng>
 
 
@@ -740,92 +740,21 @@ clusters
 [
     {
         "coordinates": [
-            -111.837074,
-            41.68513
+            -111.6915633,
+            40.3402502
         ],
         "layers": {
             "meetinghouse": {
-                "count": 83
+                "id": "5403308-01-01",
+                "count": 1
             }
         },
-        "dispersed": true
+        "dispersed": false
     },
     {
         "coordinates": [
-            -111.883462,
-            40.39906
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 289
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -111.877714,
-            40.728126
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 397
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -111.904388,
-            40.980329
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 175
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -111.971995,
-            41.219956
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 165
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -111.8712028,
-            39.007512
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 7
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -111.6730927,
-            40.2485915
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 147
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -112.455245,
-            40.354559
+            -111.688284,
+            40.310773
         ],
         "layers": {
             "meetinghouse": {
@@ -836,204 +765,8 @@ clusters
     },
     {
         "coordinates": [
-            -112.302449,
-            40.5339932
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 32
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -112.432946,
-            40.0952912
-        ],
-        "layers": {
-            "meetinghouse": {
-                "id": "5051363-02-01",
-                "count": 1
-            }
-        },
-        "dispersed": false
-    },
-    {
-        "coordinates": [
-            -111.778667,
-            40.040857
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 63
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -112.032343,
-            41.3709228
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 14
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -111.837049,
-            41.845289
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 12
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -111.853821,
-            40.568991
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 115
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -112.0800233,
-            41.6367082
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 25
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -111.6451015,
-            39.2478412
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 10
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -111.8544518,
-            39.224292
-        ],
-        "layers": {
-            "meetinghouse": {
-                "id": "5123224-01-01",
-                "count": 1
-            }
-        },
-        "dispersed": false
-    },
-    {
-        "coordinates": [
-            -111.838349,
-            39.713702
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 8
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -112.103066,
-            40.327514
-        ],
-        "layers": {
-            "meetinghouse": {
-                "id": "5462711-01-01",
-                "count": 1
-            }
-        },
-        "dispersed": false
-    },
-    {
-        "coordinates": [
-            -112.1242046,
-            41.7923407
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 4
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -112.0829045,
-            40.6880712
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 9
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -112.3151536,
-            38.9577234
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 5
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -112.5597833,
-            39.350056
-        ],
-        "layers": {
-            "meetinghouse": {
-                "count": 3
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -112.2832243,
-            39.5327764
-        ],
-        "layers": {
-            "meetinghouse": {
-                "id": "5256186-01-01",
-                "count": 1
-            }
-        },
-        "dispersed": false
-    },
-    {
-        "coordinates": [
-            -111.6395509,
-            39.4841928
+            -111.6794088,
+            40.3113624
         ],
         "layers": {
             "meetinghouse": {
@@ -1044,12 +777,12 @@ clusters
     },
     {
         "coordinates": [
-            -112.1127458,
-            39.9551669
+            -111.6777976,
+            40.3190789
         ],
         "layers": {
             "meetinghouse": {
-                "id": "5151910-01-01",
+                "id": "5185939-01-01",
                 "count": 1
             }
         },
@@ -1057,12 +790,12 @@ clusters
     },
     {
         "coordinates": [
-            -111.6375594,
-            39.6262285
+            -111.688832,
+            40.314634
         ],
         "layers": {
             "meetinghouse": {
-                "id": "5215560-01-01",
+                "id": "5303311-01-01",
                 "count": 1
             }
         },
@@ -1070,12 +803,12 @@ clusters
     },
     {
         "coordinates": [
-            -111.770512,
-            41.259562
+            -111.6690974,
+            40.308667
         ],
         "layers": {
             "meetinghouse": {
-                "id": "5021847-01-01",
+                "id": "5198577-01-01",
                 "count": 1
             }
         },
@@ -1083,12 +816,12 @@ clusters
     },
     {
         "coordinates": [
-            -112.4415064,
-            41.7957921
+            -111.685707,
+            40.333614
         ],
         "layers": {
             "meetinghouse": {
-                "id": "5030498-01-01",
+                "id": "5184681-01-01",
                 "count": 1
             }
         },
@@ -1096,24 +829,12 @@ clusters
     },
     {
         "coordinates": [
-            -111.675218,
-            41.0485107
+            -111.681371,
+            40.331483
         ],
         "layers": {
             "meetinghouse": {
-                "count": 4
-            }
-        },
-        "dispersed": true
-    },
-    {
-        "coordinates": [
-            -112.3353211,
-            39.3751903
-        ],
-        "layers": {
-            "meetinghouse": {
-                "id": "5050162-01-01",
+                "id": "5184703-01-01",
                 "count": 1
             }
         },
@@ -1121,12 +842,12 @@ clusters
     },
     {
         "coordinates": [
-            -111.862452,
-            39.557776
+            -111.691632,
+            40.329615
         ],
         "layers": {
             "meetinghouse": {
-                "id": "5054451-01-01",
+                "id": "5355389-01-01",
                 "count": 1
             }
         },
@@ -1134,12 +855,12 @@ clusters
     },
     {
         "coordinates": [
-            -112.2683698,
-            39.100673
+            -111.6895608,
+            40.3342151
         ],
         "layers": {
             "meetinghouse": {
-                "id": "5054230-01-01",
+                "id": "5196728-02-01",
                 "count": 1
             }
         },
@@ -1147,12 +868,12 @@ clusters
     },
     {
         "coordinates": [
-            -111.585013,
-            40.600894
+            -111.6757047,
+            40.3077866
         ],
         "layers": {
             "meetinghouse": {
-                "id": "5100453-01-01",
+                "id": "5063558-01-01",
                 "count": 1
             }
         },
@@ -1160,12 +881,38 @@ clusters
     },
     {
         "coordinates": [
-            -112.1056882,
-            39.2463336
+            -111.685988,
+            40.317466
         ],
         "layers": {
             "meetinghouse": {
-                "id": "5050626-02-01",
+                "id": "5049741-01-01",
+                "count": 1
+            }
+        },
+        "dispersed": false
+    },
+    {
+        "coordinates": [
+            -111.6915502,
+            40.307616
+        ],
+        "layers": {
+            "meetinghouse": {
+                "id": "5052351-01-01",
+                "count": 1
+            }
+        },
+        "dispersed": false
+    },
+    {
+        "coordinates": [
+            -111.693179,
+            40.324878
+        ],
+        "layers": {
+            "meetinghouse": {
+                "id": "5512115-02-01",
                 "count": 1
             }
         },
