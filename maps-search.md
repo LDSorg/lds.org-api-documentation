@@ -1,3 +1,11 @@
+Ideally you'd be able to put in your address and get back which YSA ward you belong to and which other wards / meetinghouses are nearby.
+
+Instead you get back a kinda random smattering of Tongan and Chinese wards (at least if you're in Provo or San Francisco). Unless you know the name of your ward, it's kinda difficult to find. The meeting times seem to be incorrect more often than not (based on times I've tried to find a ward to visit when I'm not going to my own) and the phone numbers provided may or may not be valid.
+
+If you're looking for a family ward I think the data is much more accurate, but for the YSA wards it's really bad.
+
+Nevertheless, it's all we have.
+
 lds.org/maps
 ===
 
