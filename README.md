@@ -54,8 +54,8 @@ for easy formatting of the data.
           * `unit_number` is found in [`/unit/current-user-ward-stake/`](https://www.lds.org/directory/services/ludrs/unit/current-user-ward-stake/) and [`/unit/current-user-units/`](https://www.lds.org/directory/services/ludrs/unit/current-user-units/)
       * Map - [/mem/map/#{head_of_house_individual_id}](https://www.lds.org/directory/services/ludrs/mem/map/#{head_of_house_individual_id})
       * Household - [/mem/householdProfile/#{head_of_house_individual_id}](https://www.lds.org/directory/services/ludrs/mem/householdProfile/#{head_of_house_individual_id})
-          * `:head_of_house_individual_id` is found in `/mem/member-list/#{ward_unit_no}`
-      * Individual Photos - [/photo/url/#{id_1},:id_2,:id_x/individual](https://www.lds.org/directory/services/ludrs/photo/url/#{id_1},:id_2,:id_x/individual)
+          * `#{head_of_house_individual_id}` is found in `/mem/member-list/#{ward_unit_no}`
+      * Individual Photos - [/photo/url/#{id_1},#{id_2},#{id_x}/individual](https://www.lds.org/directory/services/ludrs/photo/url/#{id_1},#{id_2},#{id_x}/individual)
           * member ids
       * Ward Leadership Positions & Groups (Callings)
           * List of Position Groups
@@ -79,7 +79,7 @@ for easy formatting of the data.
       * Maps
         * https://www.lds.org/rcmaps/services/user/context.json?lang=eng - some sort of current user context
 
-Note that fields preceded by colons, such as `:unit_number`
+Note that fields preceded by colons, such as `#{unit_number}`
 require an id that you'd get from another resource.
 
 LDS.org Directory
@@ -366,9 +366,9 @@ and then (intelligently?) cropped to 40x40
 
     POST /directory/services/ludrs/photo/upload/#{individual_id}/household/#{ward_unit_no}}/#{stake_unit_no}/#{area_unit_no}
 
-    name="file0"; filename="original_:picname.jpg"
-    name="file1"; filename="medium_:picname.jpg" 200x150 (height is exactly 150, width may be up to 150 or 200)
-    name="file2"; filename="thumbnail_:picname.jpg" 40x40 ()
+    name="file0"; filename="original_#{picname}.jpg"
+    name="file1"; filename="medium_#{picname}.jpg" 200x150 (height is exactly 150, width may be up to 150 or 200)
+    name="file2"; filename="thumbnail_#{picname}.jpg" 40x40 ()
 
 ```javascript
     {"good":true,"message":""}
