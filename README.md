@@ -49,30 +49,30 @@ for easy formatting of the data.
       * Stake Metadata - [/unit/current-user-units/](https://www.lds.org/directory/services/ludrs/unit/current-user-units/)
       * User Id - [/mem/current-user-id/](https://www.lds.org/directory/services/ludrs/mem/current-user-id/)
       * Approved Photo - [/mem/currentUserHasApprovedPhoto/](https://www.lds.org/directory/services/ludrs/mem/currentUserHasApprovedPhoto/)
-      * Ward Member List - [/mem/member-list/:unit_number](https://www.lds.org/directory/services/ludrs/mem/member-list/:unit_number)
-      * Ward Photo List - [/mem/wardDirectory/photos/:unit_number](https://www.lds.org/directory/services/ludrs/mem/wardDirectory/photos/:unit_number)
+      * Ward Member List - [/mem/member-list/#{unit_number}](https://www.lds.org/directory/services/ludrs/mem/member-list/#{unit_number})
+      * Ward Photo List - [/mem/wardDirectory/photos/#{unit_number}](https://www.lds.org/directory/services/ludrs/mem/wardDirectory/photos/#{unit_number})
           * `unit_number` is found in [`/unit/current-user-ward-stake/`](https://www.lds.org/directory/services/ludrs/unit/current-user-ward-stake/) and [`/unit/current-user-units/`](https://www.lds.org/directory/services/ludrs/unit/current-user-units/)
-      * Map - [/mem/map/:head_of_house_individual_id](https://www.lds.org/directory/services/ludrs/mem/map/:head_of_house_individual_id)
-      * Household - [/mem/householdProfile/:head_of_house_individual_id](https://www.lds.org/directory/services/ludrs/mem/householdProfile/:head_of_house_individual_id)
-          * `:head_of_house_individual_id` is found in `/mem/member-list/:ward_unit_no`
-      * Individual Photos - [/photo/url/:id_1,:id_2,:id_x/individual](https://www.lds.org/directory/services/ludrs/photo/url/:id_1,:id_2,:id_x/individual)
+      * Map - [/mem/map/#{head_of_house_individual_id}](https://www.lds.org/directory/services/ludrs/mem/map/#{head_of_house_individual_id})
+      * Household - [/mem/householdProfile/#{head_of_house_individual_id}](https://www.lds.org/directory/services/ludrs/mem/householdProfile/#{head_of_house_individual_id})
+          * `:head_of_house_individual_id` is found in `/mem/member-list/#{ward_unit_no}`
+      * Individual Photos - [/photo/url/#{id_1},:id_2,:id_x/individual](https://www.lds.org/directory/services/ludrs/photo/url/#{id_1},:id_2,:id_x/individual)
           * member ids
       * Ward Leadership Positions & Groups (Callings)
           * List of Position Groups
-              * https://www.lds.org/directory/services/ludrs/1.1/unit/ward-leadership-positions/:ward_unit_no/true
-              * https://www.lds.org/directory/services/ludrs/1.1/unit/ward-leadership-positions/:ward_unit_no/false (deprecated) (false)
+              * https://www.lds.org/directory/services/ludrs/1.1/unit/ward-leadership-positions/#{ward_unit_no}/true
+              * https://www.lds.org/directory/services/ludrs/1.1/unit/ward-leadership-positions/#{ward_unit_no}/false (deprecated) (false)
           * List of the Called
-              * https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/:ward_unit_no/:group_key/:instance (not a typo, it says stake, but it's also for wards)
+              * https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/#{ward_unit_no}/#{group_key}/#{instance} (not a typo, it says stake, but it's also for wards)
       * Ward Organizations
           * Categories: `["HIGH_PRIEST", "ELDER", "RELIEF_SOCIETY", "PRIEST", "TEACHER", "DEACON", "LAUREL", "MIA_MAID", "BEEHIVE", "ADULTS"]`
-          * https://www.lds.org/directory/services/ludrs/1.1/unit/roster/:ward_unit_no/:organization
+          * https://www.lds.org/directory/services/ludrs/1.1/unit/roster/#{ward_unit_no}/#{organization}
           * **Note on Adults**: This group is all adults. Remember that a newly baptized 50-year-old man may not yet have the priesthood or may be in the office of a priest (typically 16 year-olds).
       * Stake Leadership Positions & Groups
-            * https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-positions/:stake_unit_no
-            * https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/:stake_unit_no/:group_key/:instance
+            * https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-positions/#{stake_unit_no}
+            * https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/#{stake_unit_no}/#{group_key}/#{instance}
 
       * Missionaries
-          * https://www.lds.org/directory/services/ludrs/missionary/missionaryInfo/:ward_unit_no/
+          * https://www.lds.org/directory/services/ludrs/missionary/missionaryInfo/#{ward_unit_no}/
           * https://www.lds.org/directory/services/ludrs/missionary/missionaryDetail/24587980515/21067/
           * https://www.lds.org/directory/services/ludrs/missionary/missionaryPhoto/24587980515/
 
@@ -163,7 +163,7 @@ Households in Ward
 
 Individual wards contain the list of members
 
-    GET /directory/services/ludrs/mem/member-list/:ward_unit_no
+    GET /directory/services/ludrs/mem/member-list/#{ward_unit_no}
 
     [
         {
@@ -206,7 +206,7 @@ so this resource may be entirely unnecessary.
 
 The family phone number and family photo can be accessed like so
 
-    GET /directory/services/ludrs/mem/wardDirectory/photos/:ward_unit_no
+    GET /directory/services/ludrs/mem/wardDirectory/photos/#{ward_unit_no}
 
     [
         {
@@ -231,7 +231,7 @@ The **individual phone number** is `headOfHousehold.phone`.
 
 The **family phone number** is `householdInfo.phone` (but I'm not sure if it's different).
 
-    GET /directory/services/ludrs/mem/householdProfile/:head_of_house_individual_id
+    GET /directory/services/ludrs/mem/householdProfile/#{head_of_house_individual_id}
 
     {
       "canViewMapLink": true,
@@ -314,7 +314,7 @@ Map of Household
 You can build the urlLink yourself,
 so this resource may be entirely unnecessary.
 
-    GET /directory/services/ludrs/mem/map/:head_of_house_individual_id
+    GET /directory/services/ludrs/mem/map/#{head_of_house_individual_id}
 
     {
       "urlLink": "https://lds.org/rcmaps/#x=ward&ward=12345&id=household:1234567890"
@@ -352,7 +352,7 @@ the image is scaled to whatever fits best in the bounds of 200x150
 and then (intelligently?) cropped to 40x40
 (or at least it seems to do a good job of getting the face).
 
-    POST /directory/services/ludrs/photo/upload/:individual_id/household/:ward_unit_no}/:stake_unit_no/:area_unit_no
+    POST /directory/services/ludrs/photo/upload/#{individual_id}/household/#{ward_unit_no}}/#{stake_unit_no}/#{area_unit_no}
 
     name="file0"; filename="original_:picname.jpg"
     name="file1"; filename="medium_:picname.jpg" 200x150 (height is exactly 150, width may be up to 150 or 200)
@@ -376,7 +376,7 @@ Ward Leadership
 
 ### Positions (to be filled)
 
-    GET https://www.lds.org/directory/services/ludrs/1.1/unit/ward-leadership-positions/:ward_unit_no/true
+    GET https://www.lds.org/directory/services/ludrs/1.1/unit/ward-leadership-positions/#{ward_unit_no}/true
 
 ```javascript
 {
@@ -411,7 +411,7 @@ Ward Leadership
 
 ### Positions (false) (probably useless)
 
-    GET https://www.lds.org/directory/services/ludrs/1.1/unit/ward-leadership-positions/:ward_unit_no/false
+    GET https://www.lds.org/directory/services/ludrs/1.1/unit/ward-leadership-positions/#{ward_unit_no}/false
 
 Seems like supplying `false` just changes the name of `wardLeadership` to `stakeLeadership`,
 probably just a bugfix of a time long gone.
@@ -449,7 +449,7 @@ probably just a bugfix of a time long gone.
 
 ### Groups (the called and chosen)
 
-    GET https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/:ward_unit_no/:group_key/:instance
+    GET https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/#{ward_unit_no}/#{group_key}/#{instance}
 
 **Note**: It's `stake-leadership-group-detail`, but it applies to wards.
 
@@ -476,7 +476,7 @@ Stake Leadership
 
 ### Positions (to be filled)
 
-    GET https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-positions/:stake_unit_no
+    GET https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-positions/#{stake_unit_no}
 
 ```javascript
 {
@@ -511,7 +511,7 @@ Stake Leadership
 
 ### Groups (of called individuals)
 
-    GET https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/:stake_unit_no/:group_key/:instance
+    GET https://www.lds.org/directory/services/ludrs/1.1/unit/stake-leadership-group-detail/#{stake_unit_no}/#{group_key}/#{instance}
 
 ```javascript
 {
