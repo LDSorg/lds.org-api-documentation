@@ -1,4 +1,4 @@
-Unofficial lds.org API Documentation
+LDS.org API Documentation
 ===
 
 Since there is no official API for LDS.org,
@@ -389,6 +389,9 @@ Let's you know whether or not the ward clerk has approved a photo uploaded by yo
 
 Ward Leadership
 ---
+
+Note that the key **`instance`** probably refers to Provo wards where there's 2 Relief Societies.
+I'm not sure.
 
 ### Positions (to be filled)
 
