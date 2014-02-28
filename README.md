@@ -1,3 +1,8 @@
+SOON TO BE MOVED
+===
+
+At the request of a member of the Church's IT department, I will soon be moving this documentation to a separate website where password authentication is required.
+
 LDS.org API Documentation
 ===
 
