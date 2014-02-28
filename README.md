@@ -1,7 +1,9 @@
 SOON TO BE MOVED
 ===
 
-At the request of a member of the Church's IT department, I will soon be moving this documentation to a separate website where password authentication is required.
+At the request of a member of the Church's IT department, I will soon be moving this documentation to a separate website where password authentication with an LDS.org account is required.
+
+I assured the person that I spoke with that there's nothing here that a non-member could access and use and also nothing here that a member with lds.org access can't figure out with the Chrome debugger, however, I don't want to make a big deal out of it... meh...
 
 LDS.org API Documentation
 ===
