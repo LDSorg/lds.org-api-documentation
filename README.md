@@ -381,6 +381,15 @@ and then (intelligently?) cropped to 40x40
     {"good":true,"message":""}
 ```
 
+Seen in the wild:
+
+ * `largeUri`: 375x375 (14926 b), 226x375
+ * `mediumUri`: 150x150 (4220 b), 90x150
+ * `thumbnailUri`: 40x40 (1076 b), 24x40
+ * `originalUri`: redirects to 404
+
+The reason for listing the size is so that I can later estimate the jpeg compression used. The original 375x375 image was around 58kb, so the quality is obviously being lowered a bit, in addition to the resolution change. The size difference would suggest that the jpeg quality was reduced to something in the range of 15% to 20%.
+
 Approved Photo
 ---
 
