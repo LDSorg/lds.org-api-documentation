@@ -176,6 +176,10 @@ Individual wards contain the list of members
 
     GET /directory/services/ludrs/mem/member-list/#{ward_unit_no}
 
+**WARNING** **BUG** `headOfHouseIndividualId` and `householdInfo.individualId` refer to the LDS church member in the household if the household/family is of mixed faith (**part-member family**). It may refer to the spouse or even an other/child. `headOfHouse` and `headOfHousehold` are misnomers. They will sometimes refer to the non-member head or the spouse or a child.
+
+**Note** The husband and wife may have distinct last names... so try to go with `surname` when making ad-hoc ids, even if it's the wrong last name for that person.
+
 ```javascript
     [
         {
@@ -247,6 +251,10 @@ The **individual phone number** is `headOfHousehold.phone`.
 The **family phone number** is `householdInfo.phone` (but I'm not sure if it's different).
 
     GET /directory/services/ludrs/mem/householdProfile/#{head_of_house_individual_id}
+
+**WARNING** **BUG** `headOfHouseIndividualId` and `householdInfo.individualId` refer to the LDS church member in the household if the household/family is of mixed faith (**part-member family**). It may refer to the spouse or even an other/child. `headOfHouse` and `headOfHousehold` are misnomers. They will sometimes refer to the non-member head or the spouse or a child.
+
+**Note** The husband and wife may have distinct last names... so try to go with `surname` when making ad-hoc ids, even if it's the wrong last name for that person.
 
 ```javascript
     {
