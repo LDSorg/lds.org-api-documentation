@@ -54,7 +54,8 @@ for easy formatting of the data.
       * Page Translation - [/page/str/index](https://www.lds.org/directory/services/ludrs/page/str/index)
       * Ward Metadata - [/unit/current-user-ward-stake/](https://www.lds.org/directory/services/ludrs/unit/current-user-ward-stake/)
       * Stake Metadata - [/unit/current-user-units/](https://www.lds.org/directory/services/ludrs/unit/current-user-units/)
-      * User Id - [/mem/current-user-id/](https://www.lds.org/directory/services/ludrs/mem/current-user-id/)
+      * <strike>User Id - [/mem/current-user-id/](https://www.lds.org/directory/services/ludrs/mem/current-user-id/)</strike>
+      * User Info - [/mem/current-user-info/](https://www.lds.org/directory/services/ludrs/mem/current-user-info/)
       * Approved Photo - [/mem/currentUserHasApprovedPhoto/](https://www.lds.org/directory/services/ludrs/mem/currentUserHasApprovedPhoto/)
       * Ward Member List - [/mem/member-list/#{unit_number}](https://www.lds.org/directory/services/ludrs/mem/member-list/#{unit_number})
       * Ward Photo List - [/mem/wardDirectory/photos/#{unit_number}](https://www.lds.org/directory/services/ludrs/mem/wardDirectory/photos/#{unit_number})
@@ -356,7 +357,13 @@ Phone Numbers are only visible via the photos resource.
 
 The only individual data is about the current user.
 
-    GET /directory/services/ludrs/mem/current-user-id/
+    GET /directory/services/ludrs/mem/current-user-info/
+    
+```javascript
+{ "individualId": 999999999
+, "newOption2User": false
+}
+```
 
     GET /directory/services/ludrs/page/userLocale/
 
