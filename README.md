@@ -1,9 +1,10 @@
-SOON TO BE MOVED
+Official API Documentation
 ===
 
-At the request of a member of the Church's IT department, I will soon be moving this documentation to a separate website where password authentication with an LDS.org account is required.
+I found some stuff that's legit:
 
-I assured the person that I spoke with that there's nothing here that a non-member could access and use and also nothing here that a member with lds.org access can't figure out with the Chrome debugger, however, I don't want to make a big deal out of it... meh...
+* <http://tech.lds.org/wiki/LDS_Tools_Web_Services>
+* <https://tech.lds.org/mobile/ldstools/config.json>
 
 LDS.org API Documentation
 ===
@@ -32,6 +33,13 @@ can see that an unprivileged member cannot.
 
 And whatever you're doing - be it an iOS app or web or whatever,
 be keenly aware of privacy and legal concerns.
+
+Soon to be moved
+===
+
+At the request of a member of the Church's IT department, I will soon be moving this documentation to a separate website where password authentication with an LDS.org account is required.
+
+I assured the person that I spoke with that there's nothing here that a non-member could access and use and also nothing here that a member with lds.org access can't figure out with the Chrome debugger, however, I don't want to make a big deal out of it... meh...
 
 Overview & Playground
 ===
