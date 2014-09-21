@@ -375,6 +375,36 @@ The only individual data is about the current user.
 
     GET /directory/services/ludrs/page/userLocale/
 
+Changing your phone number (requires verification):
+
+    POST https://ldsaccount.lds.org/protected/contact-info/
+    
+    _tk=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+    &pendingAction=
+    &personalInfo.email.value=johndoe%40gmail.com
+    &personalInfo.altEmail.value=
+    &memberInfo.directoryIndividualEmail.email=johndoe%40gmail.com
+    &memberInfo.directoryIndividualEmail.privacyLevel=STAKE
+    &personalInfo.sms.country=USA
+    &personalInfo.sms.number=8015550123
+    &accountRecovery.mrnRecoveryAllowed=true
+    &_accountRecovery.mrnRecoveryAllowed=on
+    
+Changing your username / display name:
+
+    POST https://ldsaccount.lds.org/protected/account
+    
+    _tk=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+    &requireParentalConsent=false
+    &parentalConsentType=
+    &parentalConsentSms=
+    &parentalConsentCountryCode=
+    &parentalConsentEmail=
+    &parentalConsentMrn=
+    &userAccountInfo.userName=johndoe
+    &userAccountInfo.displayName=J.T. Doe
+    &userAccountInfo.personalInfo.preferredLanguage=en
+    
 ### Photo Upload
 
 The flash uploader tool does some image manipulation on the file you upload
