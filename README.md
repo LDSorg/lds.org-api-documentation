@@ -1,3 +1,10 @@
+READ THIS FIRST
+=====
+
+This documentation effort resulted in a much simpler OAuth2 service.
+
+See https://ldsconnect.org.
+
 Official API Documentation
 ===
 
