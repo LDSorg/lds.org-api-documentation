@@ -3,7 +3,7 @@ READ THIS FIRST
 
 This documentation effort resulted in a much simpler OAuth2 service.
 
-See https://lds.io.
+See [LDS I/O](https://lds.io) (<https://lds.io>).
 
 Moved to LDS.org Wiki
 ==================
